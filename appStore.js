@@ -9,4 +9,7 @@ export const useStore = create((set) => ({
 
 	image: null,
 	setImage: (e) => set({ image: e }),
+
+	snap: null,
+	setSnap: (e) => set({ snap: e }),
 }));

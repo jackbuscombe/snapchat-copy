@@ -15,6 +15,8 @@ function MyApp({ Component, pageProps }) {
 		onAuthStateChanged(auth, (user) => {
 			if (user) {
 				setUser(user);
+			} else {
+				setUser(null);
 			}
 			setLoadingUser(false);
 		});
@@ -26,7 +28,10 @@ function MyApp({ Component, pageProps }) {
 
 	return (
 		<div className="flex flex-col items-center justify-center bg-[#fefc01] h-screen">
-			<Component {...pageProps} />
+			<div className="flex flex-col items-center">
+				<img className="h-20 w-30" src="https://scx2.b-cdn.net/gfx/news/2017/1-snapchat.jpg" alt="" />
+				<Component {...pageProps} />
+			</div>
 		</div>
 	);
 }
