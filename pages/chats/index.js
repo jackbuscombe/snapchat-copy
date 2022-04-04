@@ -32,7 +32,7 @@ function Chats() {
 	return (
 		<div className="flex flex-col">
 			{/* Chats Header */}
-			<div className="flex items-center justify-between p-4 bg-[#059ee0] text-white">
+			<div className="flex items-center justify-between p-4 bg-[#059ee0] text-white rounded-t-2xl">
 				{/* Avatar */}
 				<div
 					className="cursor-pointer hover:opacity-80"
@@ -55,13 +55,13 @@ function Chats() {
 			</div>
 
 			{/* Posts */}
-			<div className="h-[359px] bg-white mt-[-9px] rounded-lg overflow-scroll no-scrollbar">
+			<div className="h-[359px] bg-white mt-[-9px] rounded-lg rounded-b-2xl overflow-scroll no-scrollbar">
 				{posts.map(({ id, data: { profilePic, username, timestamp, imageUrl, read } }) => (
 					<Chat key={id} id={id} username={username} timestamp={timestamp} imageUrl={imageUrl} read={read} profilePic={profilePic} />
 				))}
 			</div>
 
-			<div onClick={takeSnap} className="absolute bg-white bottom-32 left-[50%] transform -translate-x-[50%] cursor-pointer h-10 w-10 rounded-full border-4 border-gray-500 hover:opacity-80"></div>
+			<div onClick={takeSnap} className="absolute bg-white bottom-20 left-[50%] transform -translate-x-[50%] cursor-pointer h-10 w-10 rounded-full border-4 border-gray-500 hover:opacity-80"></div>
 		</div>
 	);
 }

@@ -57,7 +57,7 @@ function Preview() {
 				<AdjustmentsIcon className="toolbar-icons" />
 				<ClockIcon className="toolbar-icons" />
 			</div>
-			<img src={image} alt="Snap Image" />
+			<img className="rounded-2xl" src={image} alt="Snap Image" />
 			<div onClick={sendPost} className="absolute bottom-0 right-[15px] transform -translate-y-[50%] bg-[#fefc01] text-black flex justify-evenly items-center rounded-lg p-2 cursor-pointer">
 				<h2 className="text-sm mr-3">Send</h2>
 				<PaperAirplaneIcon className="h-3 w-3 rotate-90" />

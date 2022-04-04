@@ -27,9 +27,9 @@ function Login() {
 			<div className="flex flex-col justify-center items-center">
 				<img className="h-[300px] object-contain" src="https://scx2.b-cdn.net/gfx/news/2017/1-snapchat.jpg" alt="" />
 				{loadingUser ? (
-					<div className="bg-white flex flex-col items-center h-[20%] w-[50%]">
-						<h2 className="text-xl">Loading</h2>
-						<img className="h-30 w-30" src="https://cdn.hackernoon.com/images/0*4Gzjgh9Y7Gu8KEtZ.gif" alt="Loading" />
+					<div className="bg-white flex flex-col items-center h-[20%] w-[50%] p-6 shadow-2xl -mt-12">
+						<h2 className="text-xl font-bold">Initializing Camera...</h2>
+						<img className="h-24 w-30" src="https://cdn.hackernoon.com/images/0*4Gzjgh9Y7Gu8KEtZ.gif" alt="Loading" />
 					</div>
 				) : (
 					<button onClick={login} className="bg-transparent px-6 text-lg border border-black rounded-md hover:bg-yellow-200">

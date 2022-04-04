@@ -58,7 +58,7 @@ function WebcamCapture() {
 	return (
 		<div className="relative">
 			<ChevronRightIcon onClick={() => router.push("/chats")} className="absolute z-10 top-5 right-3 text-white h-6 w-6 cursor-pointer hover:opacity-80" />
-			<video className="h-96" ref={videoRef}></video>
+			<video className="h-96 rounded-2xl" ref={videoRef}></video>
 			<div onClick={takePhoto} className="absolute bottom-0 left-[50%] transform -translate-x-[50%] -translate-y-[50%] cursor-pointer h-12 w-12 rounded-full border-4 border-white"></div>
 			<canvas className="hidden" ref={photoRef}></canvas>
 		</div>
